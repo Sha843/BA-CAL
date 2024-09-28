@@ -112,7 +112,7 @@ class Multi_Head_Attention(nn.Module):
         context = context.view(batch_size, -1, self.dim_head * self.num_head)
         out = self.fc(context)
         out = self.dropout(out)
-        out = out + x  # 残差连接
+        out = out + x
         out = self.layer_norm(out)
         return out
 
