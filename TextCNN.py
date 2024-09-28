@@ -28,7 +28,6 @@ class TextCNN(nn.Module):
         return out
 
     def _load_embeddings(self, embeddings, emb_size, vocab_size):
-        """Load the embeddings based on flag"""
         if embeddings is not None:
             if vocab_size is not None:
                 assert vocab_size == embeddings.shape[0]

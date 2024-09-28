@@ -63,7 +63,6 @@ def test(model, test_loader, mlb, args):
             output3[output3 > 0.5] = 1
             output3[output3 <= 0.5] = 0
             f1 += f1_score(target, output3, average='micro', zero_division=1)
-
             if y_pred is None:
                 y_pred = output
             else:
