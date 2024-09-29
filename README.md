@@ -14,7 +14,7 @@ preprocess.py
 ``` 
 
 ## Experiments 
-You can use this script to start training.Of course, don't forget to modify the data path.
+You can use this script to start training. Of course, don't forget to modify the data path.
 ```
 main.py
 ```
